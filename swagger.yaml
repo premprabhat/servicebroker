@@ -605,6 +605,8 @@ definitions:
         type: string
       parameters:
         type: object
+      context:
+        type: object
   ServiceInstanceProvisionRequest:
     type: object
     required:
