@@ -755,6 +755,8 @@ components:
           $ref: '#/components/schemas/Object'
         context:
           $ref: '#/components/schemas/Context'
+        attributes:
+          type: object
 
     ServiceInstanceProvisionRequest:
       type: object
@@ -784,6 +786,8 @@ components:
       properties:
         dashboard_url:
           type: string
+        attributes:
+          type: object
         metadata:
           $ref: '#/components/schemas/ServiceInstanceMetadata'
 

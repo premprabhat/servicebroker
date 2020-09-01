@@ -607,6 +607,8 @@ definitions:
         type: object
       context:
         type: object
+      attributes:
+        type: object
   ServiceInstanceProvisionRequest:
     type: object
     required:
@@ -636,6 +638,8 @@ definitions:
     properties:
       dashboard_url:
         type: string
+      attributes:
+        type: object
       metadata:
         $ref: '#/definitions/ServiceInstanceMetadata'
   ServiceInstanceAsyncOperation:
