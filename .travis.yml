@@ -3,13 +3,19 @@
 
 language: bash
 
-arch:
-  - amd64
-  - arm64 
-
 services:
   - docker
-
+  
+matrix:
+  include:
+  - os: linux
+    arch: amd64
+  - os: linux
+    dist: xenial
+    virt: lxd
+    group: edge
+    arch: arm64-graviton2
+    
 before_install:
 
 script:
